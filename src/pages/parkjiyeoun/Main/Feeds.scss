@@ -1,0 +1,150 @@
+@import '../../../styles/common';
+@import '../../../styles/reset';
+@import '../../../styles/variables';
+
+.feeds {
+  article {
+    width: 600px;
+    margin-right: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+
+  article .profile {
+    @include flexAlign(flex, flex-start, center);
+    padding: 16px;
+  }
+
+  article .profile .image {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+    border-radius: 24px;
+    background: url('../../../public/images/IMG_1234.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  article .profile span {
+    @include textStyle(16px, 600, 24px, #111);
+  }
+
+  article .profile .icon_more {
+    margin-left: auto;
+  }
+
+  article .uploaded_img {
+    width: 600px;
+    height: 600px;
+    background: url('../../../public/images/feedimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  article .comment-area {
+    position: relative;
+    width: 600px;
+    padding: 16px;
+  }
+
+  article .comment-area .icon_comment img {
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+
+  article .comment-area .icon_comment .icon_bookmark {
+    position: absolute;
+    right: 0px;
+  }
+
+  article .comment-area .like_comment {
+    @include flexAlign(flex, null, center);
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  article .comment-area .like_comment .image {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 16px;
+    background: url('../../../public/images/profile06.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  article .comment-area .text_comment {
+    @include flexAlign(flex, flex-start, center);
+  }
+
+  article .comment-area .text_comment .id {
+    @include textStyle(null, 600, null, null);
+    margin-right: 10px;
+  }
+
+  article .comment-area .text_comment button {
+    @include textBtnStyle;
+    color: #666;
+  }
+
+  article .comment-area .time {
+    color: #999;
+  }
+
+  article .write_comment {
+    position: relative;
+    align-items: center;
+    width: 600px;
+    border-top: 1px solid #efefef;
+  }
+
+  article .write_comment input {
+    width: 540px;
+    padding: 20px;
+    @include textBtnStyle;
+  }
+
+  article .write_comment .uploadBtnOn {
+    width: 60px;
+    @include textBtnStyle;
+    color: #4c9eee;
+  }
+
+  article .write_comment .upload_btn_off {
+    color: #cce5fa;
+  }
+
+  article .new_text_comment .icon_heart {
+    position: relative;
+    margin-right: 12px;
+    margin-left: auto;
+  }
+
+  article .new_text_comment .icon_heart_off {
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url('../../../public/images/heart.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  article .new_text_comment .icon_heart_on {
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url('../../../public/images/heart_red.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  article .new_text_comment .icon_close {
+    width: 16px;
+    height: 16px;
+    background-image: url('../../../public/images/close.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

@@ -1,0 +1,161 @@
+@import '../../../styles/common';
+@import '../../../styles/reset';
+@import '../../../styles/variables';
+
+.main-right {
+  width: 300px;
+
+  .profile {
+    @include flexAlign(flex, null, center);
+    margin-bottom: 20px;
+  }
+
+  .profile .image {
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
+    border-radius: 30px;
+    background: url('../../../public/images/wecode.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .profile span {
+    display: block;
+    line-height: 22px;
+  }
+
+  .profile span:first-child {
+    @include textStyle(16px, 600, 24px, #111);
+  }
+
+  .profile span:last-child {
+    @include textStyle(14px, 400, 22px, #999);
+  }
+
+  .story {
+    height: 280px;
+    margin-bottom: 20px;
+    padding: 16px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+
+  .story .title {
+    @include flexAlign(flex, null, space-between);
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .story .title span {
+    @include textStyle(14px, 600, 22px, #111);
+  }
+
+  .story .title button {
+    margin-left: auto;
+    @include textBtnStyle;
+    @include textStyle(14px, 600, 22px, #999);
+  }
+
+  .story ul {
+    padding-left: 0px;
+    list-style: none;
+  }
+
+  .story .profile {
+    @include flexAlign(flex, null, null);
+    margin-bottom: 16px;
+  }
+
+  .story .profile .image_live {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    background-clip: content-box, border-box;
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(to right, #f16b39, #d02373);
+    background-origin: border-box;
+  }
+
+  .story .profile .image {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .story .profile span:first-child {
+    @include textStyle(16px, 600, 24px, #111);
+  }
+
+  .story .profile span:last-child {
+    @include textStyle(14px, 400, 22px, #999);
+  }
+
+  .recommend {
+    padding: 16px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+
+  .recommend .title {
+    @include flexAlign(flex, space-between, null);
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .recommend .title span {
+    @include textStyle(14px, 600, 22px, #111);
+  }
+
+  .recommend .title button {
+    margin-left: auto;
+    @include textBtnStyle;
+    @include textStyle(14px, 400, 22px, #999);
+  }
+
+  .recommend ul {
+    padding-left: 0px;
+    list-style: none;
+  }
+
+  .recommend .profile {
+    position: relative;
+  }
+
+  .recommend .profile .image {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .recommend .profile span:first-child {
+    @include textStyle(16px, 600, 24px, #111);
+  }
+
+  .recommend .profile span:last-child {
+    @include textStyle(14px, 400, 24px, #999);
+  }
+
+  .recommend .profile button {
+    margin-left: auto;
+    @include textBtnStyle;
+    color: #4c9eee;
+    font-size: 14px;
+  }
+
+  .info {
+    @include textStyle(12px, 400, 18px, #999);
+  }
+}

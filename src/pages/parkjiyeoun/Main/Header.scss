@@ -1,0 +1,106 @@
+@import '../../../styles/common';
+@import '../../../styles/reset';
+@import '../../../styles/variables';
+
+.header {
+  @include flexAlign(flex, center, center);
+  @include textStyle(16px, 400, 24px, #111);
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: solid 1px #efefef;
+    background-color: #fff;
+  }
+
+  nav .container {
+    @include flexAlign(flex, space-between, center);
+    position: relative;
+    width: 1080px;
+    height: 60px;
+    margin: auto;
+  }
+
+  #search_result {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    top: 20px;
+    left: -50px;
+    width: 300px;
+    height: 180px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    list-style: none;
+  }
+
+  main {
+    @include flexAlign(flex, null, null);
+  }
+
+  article {
+    width: 600px;
+    margin-right: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+
+  .main-right {
+    width: 300px;
+  }
+
+  input::placeholder {
+    @include textStyle(14px, 400, 22px, #999);
+  }
+
+  #search_result {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    top: 20px;
+    left: -50px;
+    width: 300px;
+    height: 180px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    list-style: none;
+  }
+
+  nav .logo_set span {
+    @include textStyle(24px, null, 24px, #111);
+    padding-left: 8px;
+    font-family: 'Lobster', cursive;
+  }
+
+  nav .search_input {
+    position: relative;
+    width: 200px;
+    height: 28px;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+  }
+
+  nav .search_input input {
+    position: absolute;
+    left: 0;
+    @include textBtnStyle;
+    padding: 6px 26px;
+    text-align: center;
+  }
+
+  nav .search_input img {
+    position: absolute;
+    top: 8px;
+    left: 70px;
+    filter: opacity(0.5);
+  }
+
+  nav .container .utility img {
+    margin-left: 16px;
+  }
+}

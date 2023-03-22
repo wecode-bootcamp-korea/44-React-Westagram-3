@@ -1,0 +1,16 @@
+@import '../../../styles/common';
+@import '../../../styles/reset';
+@import '../../../styles/variables';
+
+.main {
+  @include flexAlign(flex, center, center);
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #f0f0f0;
+  @include textStyle(16px, 400, 24px, #111);
+  font-family: 'Noto Sans KR', sans-serif;
+
+  main {
+    @include flexAlign(flex, null, null);
+  }
+}
