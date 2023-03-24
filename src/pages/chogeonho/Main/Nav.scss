@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 50px;
+
+  font-family: 'Lobster', cursive;
+
+  .nav-input-letter {
+    display: flex;
+  }
+
+  .insta-log {
+    width: 70px;
+  }
+}
