@@ -6,48 +6,55 @@ $borderColor: #dedede;
   justify-content: $justify;
 }
 
-body {
-  @include flex(row, center, center);
-  height: 100vh;
-}
+// body {
+//   @include flex(row, center, center);
+//   height: 100vh;
+// }
 
 .login {
-  @include flex(column, center, center);
-  width: 400px;
-  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 
-  border: 1px solid $borderColor;
+  .form {
+    @include flex(column, center, center);
+    width: 400px;
+    height: 60vh;
 
-  .title {
-    margin-top: -20px;
-    font-family: 'Lobster', cursive;
-    font-size: 60px;
-  }
-
-  .id,
-  .pw {
-    width: 300px;
-    height: 30px;
-    margin-top: 8px;
     border: 1px solid $borderColor;
-    border-radius: 3px;
-    background-color: #fafafa;
-    color: rgba(152, 152, 152, 255);
-  }
-  .login-button {
-    width: 312px;
-    height: 40px;
-    margin-top: 13px;
-    margin-bottom: 120px;
-    border: $borderColor;
-    border-radius: 5px;
-    background-color: rgba(103, 182, 250, 255);
-    color: white;
-    font-weight: bold;
-    &:hover {
+
+    .title {
+      margin-top: -20px;
+      font-family: 'Lobster', cursive;
+      font-size: 60px;
+    }
+
+    .id,
+    .pw {
+      width: 300px;
+      height: 30px;
+      margin-top: 8px;
+      border: 1px solid $borderColor;
+      border-radius: 3px;
+      background-color: #fafafa;
+      color: rgba(152, 152, 152, 255);
+    }
+    .login-button {
       width: 312px;
-      background-color: #2074f4;
-      cursor: pointer;
+      height: 40px;
+      margin-top: 13px;
+      margin-bottom: 120px;
+      border: $borderColor;
+      border-radius: 5px;
+      background-color: rgba(103, 182, 250, 255);
+      color: white;
+      font-weight: bold;
+      &:hover {
+        width: 312px;
+        background-color: #2074f4;
+        cursor: pointer;
+      }
     }
   }
 }

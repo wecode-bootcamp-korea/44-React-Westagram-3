@@ -1,0 +1,19 @@
+.story {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e7e7e7;
+
+  .story-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .profile {
+    display: flex;
+  }
+
+  .minute {
+    color: #9b9b9b;
+  }
+}

@@ -1,14 +1,15 @@
 import React from 'react';
+import './Story.scss';
 
 const Story = () => {
   return (
-    <div className="rightStory">
-      <div className="storyAll">
-        <p className="story">스토리</p>
-        <p className="seeAll">모두 보기</p>
+    <div className="story">
+      <div className="story-header">
+        <p className="story-letter">스토리</p>
+        <p className="see-all">모두 보기</p>
       </div>
-      <div className="rightProfile">
-        <div className="imgProfiles" />
+      <div className="profile">
+        <img />
         <div className="profileNickName">
           <p className="nickname">||botndk</p>
           <p className="minute">16 분전</p>

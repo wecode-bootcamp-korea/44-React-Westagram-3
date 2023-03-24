@@ -10,9 +10,9 @@ const Main = () => {
   return (
     <div className="main">
       <Nav />
-      <section className="main">
+      <section className="main-bottom">
         <MainLeft />
-        <section className="mainRight">
+        <section className="main-right">
           <RightFirst />
           <Story />
           <Recommend />

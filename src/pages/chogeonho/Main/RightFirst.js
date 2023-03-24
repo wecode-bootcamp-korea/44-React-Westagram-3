@@ -1,15 +1,14 @@
 import React from 'react';
+import './RightFirst.scss';
 
 const RightFirst = () => {
   return (
-    <div className="rightFirst">
-      <div className="rightHeader" />
-      <div className="letter">
-        <p className="boot">
-          wecode_bootcamp <br />
-          Wecode | 위코드
-        </p>
-      </div>
+    <div className="right-first">
+      <img src="../../assets/wecode.png" />
+      <p className="boot">
+        wecode_bootcamp <br />
+        <span className="wecode-letter">Wecode | 위코드</span>
+      </p>
     </div>
   );
 };

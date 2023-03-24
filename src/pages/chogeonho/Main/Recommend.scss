@@ -1,0 +1,29 @@
+.recommend {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #e7e7e7;
+  background-color: white;
+
+  .recommend-all {
+    display: flex;
+  }
+
+  .for-recommend {
+    display: flex;
+    justify-content: space-between;
+    color: #9b9b9b;
+  }
+
+  .profiles {
+    display: flex;
+
+    .know {
+      color: #9b9b9b;
+    }
+
+    .follow {
+      color: #4ea1f1;
+    }
+  }
+}
