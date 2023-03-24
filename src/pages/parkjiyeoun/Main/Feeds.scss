@@ -1,6 +1,5 @@
-@import '../../../styles/common';
-@import '../../../styles/reset';
 @import '../../../styles/variables';
+@import '../../../styles/mixin';
 
 .feeds {
   article {
@@ -20,7 +19,7 @@
     height: 48px;
     margin-right: 12px;
     border-radius: 24px;
-    background: url('../../../public/images/IMG_1234.jpeg');
+    background: url('../../../assets/parkjiyeoun/IMG_1234.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -29,14 +28,14 @@
     @include textStyle(16px, 600, 24px, #111);
   }
 
-  article .profile .icon_more {
+  article .profile .icon-more {
     margin-left: auto;
   }
 
-  article .uploaded_img {
+  article .uploaded-img {
     width: 600px;
     height: 600px;
-    background: url('../../../public/images/feedimg.jpg');
+    background: url('../../../assets/parkjiyeoun/feedimg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -47,42 +46,42 @@
     padding: 16px;
   }
 
-  article .comment-area .icon_comment img {
+  article .comment-area .icon-comment img {
     margin-right: 20px;
     vertical-align: middle;
   }
 
-  article .comment-area .icon_comment .icon_bookmark {
+  article .comment-area .icon-comment .icon-bookmark {
     position: absolute;
     right: 0px;
   }
 
-  article .comment-area .like_comment {
+  article .comment-area .like-comment {
     @include flexAlign(flex, null, center);
     margin-top: 16px;
     margin-bottom: 16px;
   }
 
-  article .comment-area .like_comment .image {
+  article .comment-area .like-comment .image {
     width: 24px;
     height: 24px;
     margin-right: 8px;
     border-radius: 16px;
-    background: url('../../../public/images/profile06.jpg');
+    background: url('../../../assets/parkjiyeoun/profile06.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-  article .comment-area .text_comment {
+  article .comment-area .text-comment {
     @include flexAlign(flex, flex-start, center);
   }
 
-  article .comment-area .text_comment .id {
+  article .comment-area .text-comment .id {
     @include textStyle(null, 600, null, null);
     margin-right: 10px;
   }
 
-  article .comment-area .text_comment button {
+  article .comment-area .text-comment button {
     @include textBtnStyle;
     color: #666;
   }
@@ -91,59 +90,59 @@
     color: #999;
   }
 
-  article .write_comment {
+  article .write-comment {
     position: relative;
     align-items: center;
     width: 600px;
     border-top: 1px solid #efefef;
   }
 
-  article .write_comment input {
+  article .write-comment input {
     width: 540px;
     padding: 20px;
     @include textBtnStyle;
   }
 
-  article .write_comment .uploadBtnOn {
+  article .write-comment .upload-btn-on {
     width: 60px;
     @include textBtnStyle;
     color: #4c9eee;
   }
 
-  article .write_comment .upload_btn_off {
+  article .write-comment .upload-btn-off {
     color: #cce5fa;
   }
 
-  article .new_text_comment .icon_heart {
+  article .new-text-comment .icon-heart {
     position: relative;
     margin-right: 12px;
     margin-left: auto;
   }
 
-  article .new_text_comment .icon_heart_off {
+  article .new-text-comment .icon-heart-off {
     position: absolute;
     right: 0;
     width: 20px;
     height: 20px;
-    background-image: url('../../../public/images/heart.png');
+    background-image: url('../../../assets/parkjiyeoun/heart.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
 
-  article .new_text_comment .icon_heart_on {
+  article .new-text-comment .icon-heart-on {
     position: absolute;
     right: 0;
     width: 20px;
     height: 20px;
-    background-image: url('../../../public/images/heart_red.png');
+    background-image: url('../../../assets/parkjiyeoun/heart_red.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-  article .new_text_comment .icon_close {
+  article .new-text-comment .icon-close {
     width: 16px;
     height: 16px;
-    background-image: url('../../../public/images/close.png');
+    background-image: url('../../../assets/parkjiyeoun/close.png');
     background-repeat: no-repeat;
     background-size: contain;
   }

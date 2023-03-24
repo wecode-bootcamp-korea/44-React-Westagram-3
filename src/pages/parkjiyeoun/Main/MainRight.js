@@ -1,11 +1,11 @@
-import React from "react";
-import "./MainRight.scss";
+import React from 'react';
+import './MainRight.scss';
 
 function MainRight() {
   return (
     <div className="main-right">
       <div className="profile">
-        <div className="image"></div>
+        <div className="image" />
         <div className="id">
           <span>wecode_bootcamp</span>
           <span>WeCode | 위코드</span>
@@ -18,7 +18,7 @@ function MainRight() {
         </div>
         <ul>
           <li className="profile">
-            <div className="image_live">
+            <div className="image-live">
               <img className="image" alt="프로필" src="/images/profile00.jpg" />
             </div>
             <div className="id">
@@ -27,7 +27,7 @@ function MainRight() {
             </div>
           </li>
           <li className="profile">
-            <div className="image_live">
+            <div className="image-live">
               <img className="image" alt="프로필" src="/images/profile04.jpg" />
             </div>
             <div className="id">
@@ -36,7 +36,7 @@ function MainRight() {
             </div>
           </li>
           <li className="profile">
-            <div className="image_live">
+            <div className="image-live">
               <img
                 className="image"
                 alt="프로필이미지"
@@ -49,7 +49,7 @@ function MainRight() {
             </div>
           </li>
           <li className="profile">
-            <div className="image_live">
+            <div className="image-live">
               <img
                 className="image"
                 alt="프로필이미지"
@@ -70,7 +70,7 @@ function MainRight() {
         </div>
         <ul>
           <li className="profile">
-            <div className="image_live">
+            <div className="image-live">
               <img
                 className="image"
                 alt="프로필이미지"
@@ -84,7 +84,7 @@ function MainRight() {
             <button>팔로우</button>
           </li>
           <li className="profile">
-            <div className="image_live">
+            <div className="image-live">
               <img
                 className="image"
                 alt="프로필이미지"
@@ -98,7 +98,7 @@ function MainRight() {
             <button>팔로우</button>
           </li>
           <li className="profile">
-            <div className="image_live">
+            <div className="image-live">
               <img className="image" alt="프로필" src="/images/profile05.jpg" />
             </div>
             <div className="id">

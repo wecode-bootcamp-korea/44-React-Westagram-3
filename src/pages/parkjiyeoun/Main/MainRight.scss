@@ -1,6 +1,5 @@
-@import '../../../styles/common';
-@import '../../../styles/reset';
 @import '../../../styles/variables';
+@import '../../../styles/mixin';
 
 .main-right {
   width: 300px;
@@ -15,7 +14,7 @@
     height: 60px;
     margin-right: 12px;
     border-radius: 30px;
-    background: url('../../../public/images/wecode.png');
+    background: url('../../../assets/parkjiyeoun/wecode.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -68,7 +67,7 @@
     margin-bottom: 16px;
   }
 
-  .story .profile .image_live {
+  .story .profile .image-live {
     position: relative;
     width: 48px;
     height: 48px;

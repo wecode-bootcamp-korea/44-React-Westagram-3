@@ -1,6 +1,5 @@
-@import '../../../styles/common';
-@import '../../../styles/reset';
 @import '../../../styles/variables';
+@import '../../../styles/mixin';
 
 .header {
   @include flexAlign(flex, center, center);
@@ -56,7 +55,7 @@
     @include textStyle(14px, 400, 22px, #999);
   }
 
-  #search_result {
+  #search-result {
     display: none;
     position: absolute;
     z-index: 99;
@@ -70,13 +69,13 @@
     list-style: none;
   }
 
-  nav .logo_set span {
+  nav .logo-set span {
     @include textStyle(24px, null, 24px, #111);
     padding-left: 8px;
     font-family: 'Lobster', cursive;
   }
 
-  nav .search_input {
+  nav .search-input {
     position: relative;
     width: 200px;
     height: 28px;
@@ -85,7 +84,7 @@
     background-color: #f8f8f8;
   }
 
-  nav .search_input input {
+  nav .search-input input {
     position: absolute;
     left: 0;
     @include textBtnStyle;
@@ -93,7 +92,7 @@
     text-align: center;
   }
 
-  nav .search_input img {
+  nav .search-input img {
     position: absolute;
     top: 8px;
     left: 70px;

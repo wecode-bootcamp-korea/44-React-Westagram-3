@@ -1,6 +1,5 @@
-@import '../../../styles/common';
-@import '../../../styles/reset';
 @import '../../../styles/variables';
+@import '../../../styles/mixin';
 
 .login {
   @include flexAlign(flex, center, center);
@@ -11,58 +10,59 @@
 
   .container {
     align-items: center;
-    width: 600px;
-    padding: 40px;
+    padding: 80px;
     border-radius: 16px;
     background-color: #fff;
     text-align: center;
-  }
 
-  .logo_text {
-    margin-bottom: 80px;
-    font-family: 'Lobster', cursive;
-    @include textStyle(70px, null, 70px, #111);
-  }
+    .logo-text {
+      margin-bottom: 80px;
+      font-family: 'Lobster', cursive;
+      @include textStyle(70px, null, 70px, #111);
+    }
 
-  .input_set input {
-    width: 420px;
-    margin-bottom: 12px;
-    padding: 16px 16px;
-    border: solid 1px #efefef;
-    border-radius: 4px;
-    background-color: #fafafa;
-    @include textStyle(18px, 400, 32px, #333);
-  }
+    .input-set {
+      input {
+        display: block;
+        width: 420px;
+        margin-bottom: 12px;
+        padding: 16px 16px;
+        border: solid 1px $defaultWhite;
+        border-radius: 4px;
+        background-color: #fafafa;
+        @include textStyle(18px, 400, 32px, #333);
+        &::placeholder {
+          @include textStyle(18px, 400, 32px, #999);
+        }
+      }
+    }
 
-  .input_set input::placeholder {
-    @include textStyle(18px, 400, 32px, #999);
-  }
+    #btn-login {
+      display: block;
+      width: 420px;
+      height: 60px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      border: 1px solid lightgray;
+      border-radius: 8px;
+      text-align: center;
+      @include textStyle(18px, 400, 60px, #fff);
+    }
 
-  #btn_login {
-    display: block;
-    width: 420px;
-    height: 60px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    background-color: #3a82ff;
-    text-align: center;
-    all: unset;
-    @include textStyle(18px, 400, 60px, #fff);
-  }
+    .btn-login-on {
+      background-color: #3a82ff;
+    }
 
-  .btnLoginOn {
-    opacity: 1;
-  }
+    .btn-login-off {
+      opacity: 0.3;
+      background-color: #3a82ff;
+    }
 
-  .btnLoginOff {
-    opacity: 0.5;
-  }
-
-  .btn_text {
-    width: 480px;
-    @include textBtnStyle;
-    @include textStyle(16px, 400, 24px, #666);
-    margin-bottom: 40px;
+    .btn-text {
+      width: 420px;
+      @include textBtnStyle;
+      @include textStyle(16px, 400, 24px, #666);
+      margin-bottom: 40px;
+    }
   }
 }

@@ -1,20 +1,20 @@
-import React from "react";
-import "./Header.scss";
+import React from 'react';
+import './Header.scss';
 
 function Header() {
   return (
     <div className="header">
       <nav>
         <div className="container">
-          <div className="logo_set">
+          <div className="logo-set">
             <img alt="인스타그램 로고" src="/images/logo.png" width="20px" />
             <span>westagram</span>
           </div>
-          <form className="search_input">
+          <form className="search-input">
             <ul id="search_result">
-              <li value="select01"></li>
-              <li value="select02"></li>
-              <li value="select03"></li>
+              <li value="select01" />
+              <li value="select02" />
+              <li value="select03" />
             </ul>
             <img
               alt="검색 아이콘"
