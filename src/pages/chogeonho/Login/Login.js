@@ -8,8 +8,9 @@ const LoginCho = () => {
   const [pw, setPw] = useState('');
   const [button, setButton] = useState(true);
   const ChangeBtn = () => {
+    console.log('잘되나?');
     if (id.includes('@') & (pw.length >= 5)) {
-      setButton(false);
+      setButton(false) && alert('로그인에 성공하셨습니다');
     } else {
       setButton(true);
     }
@@ -45,7 +46,13 @@ const LoginCho = () => {
           }}
           onKeyUp={ChangeBtn}
         />
-        <button className="login-button" disabled={button} onClick={goToMain}>
+        <button
+          className="login-button"
+          disabled={button}
+          onClick={() =>
+            navigate('/main-cho') && alert('로그인에 성공하셨습니다')
+          }
+        >
           로그인
         </button>
 

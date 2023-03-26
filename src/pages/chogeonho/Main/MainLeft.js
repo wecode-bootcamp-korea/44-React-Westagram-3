@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
 import CommentBoard from './CommentBoard';
+import door from '../../assets/chogeonho/door.avif';
+import dot from '../../assets/chogeonho/dot.png';
+import beach from '../../assets/chogeonho/beach.jpeg';
+import heart from '../../assets/chogeonho/heart.png';
+import comment from '../../assets/chogeonho/2.png';
+import down from '../../assets/chogeonho/down.png';
+import flag from '../../assets/chogeonho/1.png';
+
 import './MainLeft.scss';
 
 const MainLeft = () => {
@@ -11,29 +19,29 @@ const MainLeft = () => {
   };
   return (
     <section className="main-left">
-      <div className="feedsHeader">
-        <div className="feedsBoth">
-          <div className="feedsProfile" />
+      <div className="feeds-header">
+        <div className="feeds-both">
+          <img className="feeds-profile" src={door} alt="door" />
           <p className="name">gnoooo_</p>
         </div>
 
-        <div className="feedsDot" />
+        <img className="feeds-dot" alt="dot" src={dot} />
       </div>
 
-      <div className="imgArticle" />
+      <img className="img-article" alt="article" src={beach} />
 
-      <div className="feedsComments">
+      <div className="feeds-comments">
         <div className="imgs">
-          <div className="imgHeart" />
-          <div className="imgComment" />
-          <div className="imgShare" />
+          <img className="img-heart" src={heart} alt="heart" />
+          <img className="img-comment" src={comment} alt="comment" />
+          <img className="img-share" src={down} alt="down" />
         </div>
 
-        <div className="imgFlag" />
+        <img className="img-flag" alt="flag" src={flag} />
       </div>
-      <div className="asideLike">
+      <div className="aside-like">
         <p>
-          <span>all_dlwltn</span>님 외 10명이 좋아합니다
+          <span className="nickname">all_dlwltn</span>님 외 10명이 좋아합니다
         </p>
       </div>
       <div className="feedsCommit">
@@ -45,20 +53,22 @@ const MainLeft = () => {
           <span>더보기</span>
         </p>
         <ul id="comment-wrapper" className="commentWrapper">
-          <CommentBoard commentList={commentList} />
+          <CommentBoard
+            commentList={commentList}
+            setCommentList={setCommentList}
+          />
         </ul>
       </div>
 
-      <form id="comment-box" className="leftComment">
+      <form className="left-comment">
         <input
-          id="left-comment"
-          className="inputComment"
+          className="input-comment"
           type="text"
           placeholder="댓글 달기..."
           onChange={e => setInputvalue(e.target.value)}
           value={inputValue}
         />
-        <button id="comment-submit" className="inputBtn" onClick={addComment}>
+        <button className="input-btn" onClick={addComment}>
           게시
         </button>
       </form>

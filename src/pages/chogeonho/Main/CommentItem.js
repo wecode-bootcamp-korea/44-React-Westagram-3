@@ -1,12 +1,26 @@
 import React from 'react';
 
-const CommentItem = props => {
-  return (
-    <div>
-      {props.item}
-      <img alt="heart" src="../../assets/Main/heart.png" />
+import Heart from './Heart';
 
-      <button>삭제</button>
+import './CommentItem.scss';
+const CommentItem = ({ item, handleRemove, id }) => {
+  // console.log(props);
+  return (
+    <div className="comment-item">
+      {item}
+
+      <div className="function">
+        <Heart />
+
+        <div
+          onClick={() => {
+            handleRemove(id);
+            //console.log(id);
+          }}
+        >
+          x
+        </div>
+      </div>
     </div>
   );
 };

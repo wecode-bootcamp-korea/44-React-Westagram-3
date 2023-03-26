@@ -1,12 +1,19 @@
 import React from 'react';
 import CommentItem from './CommentItem';
 
-const CommentBoard = props => {
+const CommentBoard = ({ commentList, setCommentList }) => {
+  const handleRemove = id => {
+    const newCommentsToRender = commentList.filter((item, x) => id !== x);
+    // const newCommentsToRender = commentList.filter(item => item.id !== id);
+
+    setCommentList(newCommentsToRender);
+  };
+
   return (
     <div>
       <li>
-        {props.commentList.map(item => (
-          <CommentItem item={item} />
+        {commentList.map((item, i) => (
+          <CommentItem item={item} handleRemove={handleRemove} id={i} />
         ))}
       </li>
     </div>

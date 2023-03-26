@@ -1,12 +1,16 @@
 .recommend {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  margin-top: 15px;
+  margin-left: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
   border: 1px solid #e7e7e7;
   background-color: white;
 
   .recommend-all {
     display: flex;
+    justify-content: space-between;
   }
 
   .for-recommend {
