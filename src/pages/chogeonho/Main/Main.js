@@ -6,6 +6,7 @@ import RightFirst from './RightFirst';
 import Story from './Story';
 import Recommend from './Recommend';
 import MainLeft from './MainLeft';
+import Data from './Data';
 const Main = () => {
   return (
     <div className="main">
@@ -16,6 +17,7 @@ const Main = () => {
           <RightFirst />
           <Story />
           <Recommend />
+          <Data />
         </section>
       </section>
     </div>
