@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "comment": "hi",
+    "name": "fasdfjk",
+    "src": "/images/chogeonho/cat3.jpeg"
+  },
+  {
+    "id": 2,
+    "comment": "너무 어려웡",
+    "name": "fahk",
+    "src": "/images/chogeonho/IMG_7141.JPG"
+  },
+  {
+    "id": 3,
+    "comment": "밍?",
+    "name": "fasdfsdfsdfjk",
+    "src": "/images/chogeonho/cat1.jpeg"
+  },
+  {
+    "id": 4,
+    "comment": "bye ",
+    "name": "we",
+    "src": "/images/chogeonho/cat2.jpeg"
+  }
+]

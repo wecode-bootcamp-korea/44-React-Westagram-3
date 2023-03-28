@@ -1,0 +1,81 @@
+.main-left {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+
+  margin-top: 50px;
+  border: 1px solid #cccfca;
+  background-color: white;
+  // margin-right: -130px;
+
+  .feeds-header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+
+  .feeds-both {
+    display: flex;
+  }
+
+  .name {
+    margin-left: 5px;
+    font-weight: bold;
+  }
+
+  .feeds-profile {
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  .feeds-dot {
+    width: 30px;
+    margin-right: 20px;
+  }
+  .img-article {
+    height: 500px;
+  }
+
+  .img-heart,
+  .img-comment,
+  .img-share,
+  .img-flag {
+    width: 20px;
+    margin-right: 5px;
+  }
+
+  .feeds-comments {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  .aside-like {
+    display: flex;
+    align-items: center;
+    height: 20px;
+  }
+
+  .nickname {
+    font-weight: bold;
+  }
+
+  .input-comment {
+    width: 90%;
+    height: 30px;
+    margin-top: 15px;
+    border: none;
+  }
+
+  .input-btn {
+    margin-top: 15px;
+    border: none;
+    background-color: white;
+    color: #67b6fa;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .left-comment {
+    border: 1px solid #cccfca;
+  }
+}
