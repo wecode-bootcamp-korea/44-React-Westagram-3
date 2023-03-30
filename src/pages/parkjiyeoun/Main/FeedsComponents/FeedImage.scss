@@ -1,0 +1,32 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/mixin';
+
+.feed {
+  .profile {
+    @include flexAlign(flex, flex-start, center);
+    padding: 16px;
+
+    .profile-image {
+      width: 48px;
+      height: 48px;
+      margin-right: 12px;
+      border-radius: 24px;
+      object-fit: cover;
+    }
+
+    span {
+      @include textStyle(16px, 600, 24px, #111);
+    }
+    .icon-more {
+      width: 16px;
+      height: 16px;
+      margin-left: auto;
+    }
+  }
+
+  .uploaded-img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+  }
+}

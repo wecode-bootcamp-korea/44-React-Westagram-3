@@ -1,14 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './MainRight.scss';
 
 function MainRight() {
   return (
     <div className="main-right">
       <div className="profile">
-        <div className="image" />
+        <img
+          className="profile-image"
+          alt="프로필이미지"
+          src="/images/parkjiyeoun/profile/profile-05.jpg"
+        />
         <div className="id">
-          <span>wecode_bootcamp</span>
-          <span>WeCode | 위코드</span>
+          <span>pajiyee</span>
+          <span>jijijij@gmail.com</span>
         </div>
       </div>
       <div className="story">
@@ -19,7 +24,11 @@ function MainRight() {
         <ul>
           <li className="profile">
             <div className="image-live">
-              <img className="image" alt="프로필" src="/images/profile00.jpg" />
+              <img
+                className="profile-image"
+                alt="프로필이미지"
+                src="/images/parkjiyeoun/profile/profile-04.jpg"
+              />
             </div>
             <div className="id">
               <span>_yum_s</span>
@@ -28,36 +37,40 @@ function MainRight() {
           </li>
           <li className="profile">
             <div className="image-live">
-              <img className="image" alt="프로필" src="/images/profile04.jpg" />
+              <img
+                className="profile-image"
+                alt="프로필이미지"
+                src="/images/parkjiyeoun/profile/profile-03.jpg"
+              />
             </div>
             <div className="id">
-              <span>drink_eat_drink</span>
+              <span>drink</span>
               <span>3시간 전</span>
             </div>
           </li>
           <li className="profile">
             <div className="image-live">
               <img
-                className="image"
+                className="profile-image"
                 alt="프로필이미지"
-                src="/images/profile03.jpg"
+                src="/images/parkjiyeoun/profile/profile-01.jpg"
               />
             </div>
             <div className="id">
-              <span>drink_eat_drink</span>
+              <span>eat</span>
               <span>3시간 전</span>
             </div>
           </li>
           <li className="profile">
             <div className="image-live">
               <img
-                className="image"
+                className="profile-image"
                 alt="프로필이미지"
-                src="/images/profile06.jpg"
+                src="/images/parkjiyeoun/profile/profile-00.jpg"
               />
             </div>
             <div className="id">
-              <span>drink_eat_drink</span>
+              <span>googog</span>
               <span>3시간 전</span>
             </div>
           </li>
@@ -70,13 +83,11 @@ function MainRight() {
         </div>
         <ul>
           <li className="profile">
-            <div className="image-live">
-              <img
-                className="image"
-                alt="프로필이미지"
-                src="/images/profile06.jpg"
-              />
-            </div>
+            <img
+              className="profile-image"
+              alt="프로필이미지"
+              src="/images/parkjiyeoun/profile/profile-06.jpg"
+            />
             <div className="id">
               <span>joaaaaaaahye</span>
               <span>_legend_a님 외 2명이...</span>
@@ -84,13 +95,11 @@ function MainRight() {
             <button>팔로우</button>
           </li>
           <li className="profile">
-            <div className="image-live">
-              <img
-                className="image"
-                alt="프로필이미지"
-                src="images/profile02.jpg"
-              />
-            </div>
+            <img
+              className="profile-image"
+              alt="프로필이미지"
+              src="/images/parkjiyeoun/profile/profile-07.jpg"
+            />
             <div className="id">
               <span>rampart81</span>
               <span>jimmmiee님 외 1명...</span>
@@ -98,9 +107,11 @@ function MainRight() {
             <button>팔로우</button>
           </li>
           <li className="profile">
-            <div className="image-live">
-              <img className="image" alt="프로필" src="/images/profile05.jpg" />
-            </div>
+            <img
+              className="profile-image"
+              alt="프로필이미지"
+              src="/images/parkjiyeoun/profile/profile-02.jpg"
+            />
             <div className="id">
               <span>joaaaaaaahye</span>
               <span>ringo.in.seoul님 외 12명...</span>
@@ -110,10 +121,15 @@ function MainRight() {
         </ul>
       </div>
       <div className="info">
-        <p>
-          Instagram 정보 · 지원 · 홍보 센터 · API · 채용 정보 · 개인정보처리방침
-          · 약관 · 디렉터리 · 프로필 · 해시태그 · 언어
-        </p>
+        <ul>
+          {ASIDE.map(menu => (
+            <li key={menu.id}>
+              <Link className="link" to={menu.link}>
+                <span>{menu.name}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
         <p>ⓒ 2019 INSTAGRAM</p>
       </div>
     </div>
@@ -121,3 +137,17 @@ function MainRight() {
 }
 
 export default MainRight;
+
+const ASIDE = [
+  { id: 1, name: 'Instagram 정보 · ', link: '/main-park' },
+  { id: 2, name: '지원 · ', link: '/main-park' },
+  { id: 3, name: '홍보 센터 · ', link: '/main-park' },
+  { id: 4, name: ' API · ', link: '/main-park' },
+  { id: 5, name: '채용 정보 · ', link: '/main-park' },
+  { id: 6, name: '개인정보처리방침 · ', link: '/main-park' },
+  { id: 7, name: '약관 · ', link: '/main-park' },
+  { id: 8, name: '디렉터리 · ', link: '/main-park' },
+  { id: 9, name: '프로필 · ', link: '/main-park' },
+  { id: 10, name: '해시태그 · ', link: '/main-park' },
+  { id: 11, name: '언어', link: '/main-park' },
+];

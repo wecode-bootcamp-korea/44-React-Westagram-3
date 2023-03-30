@@ -1,0 +1,48 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/mixin';
+
+.upload-comment-list-item {
+  @include flexAlign(flex, flex-start, top);
+  left: 0;
+  width: 566px;
+
+  .name {
+    @include textStyle(null, 600, null, null);
+    margin-right: 10px;
+  }
+
+  .txt {
+    width: 400px;
+  }
+
+  .icon-heart-box {
+    position: relative;
+    margin-right: 12px;
+    margin-left: auto;
+
+    .icon-heart-off {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 20px;
+      height: 20px;
+    }
+
+    .icon-heart-on {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .icon-delete-box {
+    position: relative;
+
+    .icon-delete {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

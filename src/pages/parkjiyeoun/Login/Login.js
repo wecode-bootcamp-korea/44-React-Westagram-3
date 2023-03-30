@@ -3,7 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import './Login.scss';
 
 const Login = () => {
+  const [id, setId] = useState('');
+  const [pw, setPw] = useState('');
+  const [isOn, setIsOn] = useState(false);
+
   const navigate = useNavigate();
+
   const goToMain = () => {
     if (id.indexOf('@') >= 1 && pw.length >= 5) {
       navigate('/main-park');
@@ -11,19 +16,19 @@ const Login = () => {
       alert('다시 입력');
     }
   };
-  const [id, setId] = useState('');
-  const [pw, setPw] = useState('');
-  const [isOn, setIsOn] = useState(false);
+
   const handleId = e => {
     setId(e.target.value);
+    isValid();
   };
+
   const handlePw = e => {
     setPw(e.target.value);
+    isValid();
   };
+
   const isValid = () => {
-    return id.indexOf('@') >= 1 && pw.length >= 5
-      ? setIsOn(true)
-      : setIsOn(false);
+    id.indexOf('@') >= 1 && pw.length >= 5 ? setIsOn(true) : setIsOn(false);
   };
 
   return (
@@ -35,14 +40,14 @@ const Login = () => {
             className="input-id"
             type="text"
             placeholder="전화번호, 사용자 이메일 또는 이메일"
-            input={isValid}
+            // input={isValid}a
             onChange={handleId}
           />
           <input
             class="input-pw"
             type="password"
             placeholder="비밀번호"
-            input={isValid}
+            // input={isValid}
             onChange={handlePw}
           />
         </form>

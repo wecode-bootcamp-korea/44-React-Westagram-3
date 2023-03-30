@@ -2,148 +2,51 @@
 @import '../../../styles/mixin';
 
 .feeds {
-  article {
-    width: 600px;
-    margin-right: 30px;
-    border-radius: 8px;
-    background-color: #fff;
+  width: 600px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background-color: #fff;
+
+  ul {
+    padding: 0;
+
+    li {
+      list-style: none;
+    }
   }
 
-  article .profile {
-    @include flexAlign(flex, flex-start, center);
-    padding: 16px;
-  }
-
-  article .profile .image {
-    width: 48px;
-    height: 48px;
-    margin-right: 12px;
-    border-radius: 24px;
-    background: url('../../../assets/parkjiyeoun/IMG_1234.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  article .profile span {
-    @include textStyle(16px, 600, 24px, #111);
-  }
-
-  article .profile .icon-more {
-    margin-left: auto;
-  }
-
-  article .uploaded-img {
-    width: 600px;
-    height: 600px;
-    background: url('../../../assets/parkjiyeoun/feedimg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  article .comment-area {
+  .comment-area {
     position: relative;
     width: 600px;
     padding: 16px;
+
+    .time {
+      color: #999;
+    }
   }
 
-  article .comment-area .icon-comment img {
-    margin-right: 20px;
-    vertical-align: middle;
-  }
-
-  article .comment-area .icon-comment .icon-bookmark {
-    position: absolute;
-    right: 0px;
-  }
-
-  article .comment-area .like-comment {
-    @include flexAlign(flex, null, center);
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
-
-  article .comment-area .like-comment .image {
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
-    border-radius: 16px;
-    background: url('../../../assets/parkjiyeoun/profile06.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  article .comment-area .text-comment {
-    @include flexAlign(flex, flex-start, center);
-  }
-
-  article .comment-area .text-comment .id {
-    @include textStyle(null, 600, null, null);
-    margin-right: 10px;
-  }
-
-  article .comment-area .text-comment button {
-    @include textBtnStyle;
-    color: #666;
-  }
-
-  article .comment-area .time {
-    color: #999;
-  }
-
-  article .write-comment {
+  .comment-input-wrap {
     position: relative;
     align-items: center;
     width: 600px;
     border-top: 1px solid #efefef;
-  }
 
-  article .write-comment input {
-    width: 540px;
-    padding: 20px;
-    @include textBtnStyle;
-  }
+    .comment-input {
+      width: 540px;
+      padding: 20px;
+      @include textBtnStyle;
+    }
 
-  article .write-comment .upload-btn-on {
-    width: 60px;
-    @include textBtnStyle;
-    color: #4c9eee;
-  }
+    .comment-btn-on {
+      width: 60px;
+      @include textBtnStyle;
+      color: #4c9eee;
+    }
 
-  article .write-comment .upload-btn-off {
-    color: #cce5fa;
-  }
-
-  article .new-text-comment .icon-heart {
-    position: relative;
-    margin-right: 12px;
-    margin-left: auto;
-  }
-
-  article .new-text-comment .icon-heart-off {
-    position: absolute;
-    right: 0;
-    width: 20px;
-    height: 20px;
-    background-image: url('../../../assets/parkjiyeoun/heart.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  article .new-text-comment .icon-heart-on {
-    position: absolute;
-    right: 0;
-    width: 20px;
-    height: 20px;
-    background-image: url('../../../assets/parkjiyeoun/heart_red.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  article .new-text-comment .icon-close {
-    width: 16px;
-    height: 16px;
-    background-image: url('../../../assets/parkjiyeoun/close.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+    .comment-btn-off {
+      width: 60px;
+      @include textBtnStyle;
+      color: #cce5fa;
+    }
   }
 }

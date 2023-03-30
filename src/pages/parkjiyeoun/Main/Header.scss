@@ -4,6 +4,7 @@
 .header {
   @include flexAlign(flex, center, center);
   @include textStyle(16px, 400, 24px, #111);
+  z-index: 10;
 
   nav {
     position: fixed;
