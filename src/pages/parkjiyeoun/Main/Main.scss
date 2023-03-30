@@ -1,0 +1,19 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixin';
+
+.main {
+  @include flexAlign(flex, center, center);
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #f8f8f8;
+  @include textStyle(16px, 400, 24px, #111);
+  font-family: 'Noto Sans KR', sans-serif;
+
+  input::placeholder {
+    @include textStyle(14px, 400, 22px, #999);
+  }
+
+  main {
+    @include flexAlign(flex, null, null);
+  }
+}
